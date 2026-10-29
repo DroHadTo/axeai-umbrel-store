@@ -30,6 +30,7 @@ services:
       AXEAI_ALLOW_LAN_BIND: "1"
       AXEAI_DATA: /data
       AXEAI_BIND: 0.0.0.0
+      AXEAI_TRUSTED_PROXY: axeai-local_app_proxy_1
     volumes:
       - ${APP_DATA_DIR}/data:/data
     tmpfs:
