@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: axeai-local
 name: AxeAI Local
-version: "1.0.7"
+version: "1.0.8"
 tagline: Local-first Bitaxe and NerdQaxe monitor
 category: Bitcoin
 description: >-
