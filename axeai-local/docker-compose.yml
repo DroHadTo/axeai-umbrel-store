@@ -7,8 +7,7 @@ services:
       APP_PORT: 8787
 
   prepare:
-    image: axeai-local:latest
-    pull_policy: never
+    image: localhost:5000/axeai-local:latest
     user: "0:0"
     entrypoint: ["chown", "10001:10001", "/data"]
     restart: "no"
@@ -17,8 +16,7 @@ services:
       - ${APP_DATA_DIR}/data:/data
 
   web:
-    image: axeai-local:latest
-    pull_policy: never
+    image: localhost:5000/axeai-local:latest
     depends_on:
       prepare:
         condition: service_completed_successfully
